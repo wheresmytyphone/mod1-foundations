@@ -1,0 +1,15 @@
+{
+  "name": "mod1-foundation-review",
+  "version": "1.0.0",
+  "description": "Mod 1 break week review with TDD, DOM manipulation, and prototype exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
