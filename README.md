@@ -6,7 +6,7 @@
 
 ## Setup
 
-1. Clone down this repository  
+1. Fork this repository & Clone it down  
 2. Run `npm install`  
 3. Run the provided test file (if you need to) by running the command indicated in that section.
 4. Note: The ice cream generator exercise does not have a test suite
