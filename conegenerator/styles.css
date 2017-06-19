@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/traditional-wallpaper.jpg);
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+}
+
+.flavorbox {
+
+}
+
+.flavorchecklist {
+  display: inline-flex;
+}
+
+label {
+  margin-right: 40px;
+}
+
+li {
+  margin-right: 5px;
+}
+
+.cone-card {
+  border: 1px solid;
+  width: 100px;
+  height: auto;
+  border-radius: 5%;
+  margin: 20px;
+}
+
+.card-box {
+  display: flex;
+}
+
+h3 {
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  background-color: #AEAC96;;
+  margin-top: 0px;
+}

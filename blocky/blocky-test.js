@@ -1,88 +1,88 @@
-var assert = require('chai');
+var assert = require('chai').assert;
 var Block = require('./blocky.js')
 
 describe('Block', function () {
 
-  it('should be a function', function () {
+  it('should be a function', function() {
     assert.isFunction(Block);
   });
 
-  it.skip('should instantiate our good friend, Blocky', function () {
+  it('should instantiate our good friend, Blocky', function () {
     var blocky = new Block();
     assert.isObject(blocky);
   });
 
-  it.skip('should take the first argument and set it as the "x" property of the instantiated object', function () {
+  it('should take the first argument and set it as the "x" property of the instantiated object', function () {
     var blocky = new Block(15);
     assert.equal(blocky.x, 15);
   });
 
-  it.skip('should take take the second argument and set it as the "y" property of the instantiated object', function () {
+  it('should take take the second argument and set it as the "y" property of the instantiated object', function () {
     var blocky = new Block(15, 30);
     assert.equal(blocky.y, 30);
   });
 
-  it.skip('should take take the third argument and set it as the "height" property of the instantiated object', function () {
+  it('should take take the third argument and set it as the "height" property of the instantiated object', function () {
     var blocky = new Block(15, 30, 50);
     assert.equal(blocky.height, 50);
   });
 
-  it.skip('should take take the fourth argument and set it as the "width" property of the instantiated object', function () {
+  it('should take take the fourth argument and set it as the "width" property of the instantiated object', function () {
     var blocky = new Block(15, 30, 50, 50);
     assert.equal(blocky.width, 50);
   });
 
-  it.skip('should by default set the height and width to 100', function () {
+  it('should by default set the height and width to 100', function () {
     var blocky = new Block(15, 30);
     assert.equal(blocky.width, 100);
     assert.equal(blocky.height, 100);
   });
 
-  it.skip('should have a method called "moveRight()"', function () {
+  it('should have a method called "moveRight()"', function () {
     var blocky = new Block(15, 30);
     assert.isFunction(blocky.moveRight);
   });
 
-  it.skip('"moveRight()" should increment the "x" property by 1', function () {
+  it('"moveRight()" should increment the "x" property by 1', function () {
     var blocky = new Block(15, 30);
     blocky.moveRight();
     assert.equal(blocky.x, 16);
   });
 
-  it.skip('should have a method called "moveLeft()" ', function () {
+  it('should have a method called "moveLeft()" ', function () {
     var blocky = new Block(15, 30);
     assert.isFunction(blocky.moveLeft);
   });
 
-  it.skip('"moveLeft()" should decrement the "x" property by 1', function () {
+  it('"moveLeft()" should decrement the "x" property by 1', function () {
     var blocky = new Block(15, 30);
     assert.equal(blocky.x, 15);
     assert.equal(blocky.moveLeft())
     assert.equal(blocky.x, 14);
   });
 
-  it.skip('should have a method called "moveDown()', function () {
+  it('should have a method called "moveDown()', function () {
     var blocky = new Block(15, 30);
     assert.isFunction(blocky.moveDown);
   });
 
-  it.skip('"moveDown()" should increment the "y" property by 1', function () {
+  it('"moveDown()" should increment the "y" property by 1', function () {
     var blocky = new Block(15, 30);
     assert.equal(blocky.y, 30);
     assert.equal(blocky.moveDown())
-    assert.equal(blocky.x, 31);
+    assert.equal(blocky.y, 31);
   });
 
-  it.skip('should have a method called "moveUp()', function () {
+  it('should have a method called "moveUp()', function () {
     var blocky = new Block(15, 30);
     assert.isFunction(blocky.moveUp);
   });
 
-  it.skip('"moveUp()" should decrement the "y" property by 1', function () {
+  it('"moveUp()" should decrement the "y" property by 1', function () {
     var blocky = new Block(15, 30);
     assert.equal(blocky.y, 30);
     assert.equal(blocky.moveUp())
-    assert.equal(blocky.x, 29);
+    assert.equal(blocky.y, 29);
   });
 
 

@@ -3,13 +3,13 @@ var Iterator = require('./arrays');
 
 describe('iterator', function() {
 
-  it('can be instantiated', function() {
+  it.skip('can be instantiated', function() {
     var factory = new Iterator();
 
     assert.equal(typeof factory, Iterator);
   });
 
-  it.skip('has a prototype function called uppercase', function() {
+  it('has a prototype function called uppercase', function() {
     var factory = new Iterator();
 
     assert.equal(typeof factory.createArray, 'function');
