@@ -25,20 +25,50 @@ li {
 }
 
 .cone-card {
-  border: 1px solid;
-  width: 100px;
-  height: auto;
-  border-radius: 5%;
-  margin: 20px;
+  margin: 10px;
+}
+
+.card-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 100px 0 100px;
+  border-color: #e0d2b3 transparent transparent transparent;
+  }
+
+p {
+  position: inherit;
+  top: 75px;
 }
 
 .card-box {
   display: flex;
+  flex-wrap: wrap; 
+}
+
+.card-top {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 60px;
+  z-index:  -1;
+}
+
+
+
+.cone-bottom {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 300px 100px 0 100px;
+border-color: #e0d2b3 transparent transparent transparent;
 }
 
 h3 {
-  border-bottom: 1px solid;
+  position: inherit;
+  top: 40px;
   margin-bottom: 20px;
-  background-color: #AEAC96;;
   margin-top: 0px;
 }

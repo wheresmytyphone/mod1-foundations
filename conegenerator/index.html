@@ -8,9 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
     <body>
-
       <h1>The Cone Conjurer</h1>
-
+      <form>
       <div class="flavorbox-box">
         <label for="flavorbox">Name that cone!</label>
         <input type="text" id= "flavorbox" class="flavorbox" name="Ice cream flavor" >
@@ -18,30 +17,36 @@
       <hr>
       <section class="checklist">
         <ul class="flavorchecklist" style='list-style-type:none'>
-          <li><input type="checkbox" id= "vanilla" name="Vanilla" value="Vanilla"></li>
+          <li><input type="checkbox" id= "vanilla" class="checkbox"name="Vanilla" value="Vanilla"></li>
             <label for="vanilla">Vanilla</label>
-          <li><input type="checkbox" id= "strawberry" name="Strawberry" value="Strawberry"></li>
+          <li><input type="checkbox" id= "strawberry" class="checkbox" name="Strawberry" value="Strawberry"></li>
             <label for="strawberry">Strawberry</label>
-          <li><input type="checkbox" id= "Chocolate" name="Chocolate" value="Chocolate"></li>
+          <li><input type="checkbox" id= "Chocolate" class="checkbox" name="Chocolate" value="Chocolate"></li>
             <label for="Chocolate">Chocolate</label>
-          <li><input type="checkbox" id= "cookie-dough" name="Cookie Dough" value="Cookie Dough"></li>
+          <li><input type="checkbox" id= "cookie-dough" class="checkbox" name="Cookie Dough" value="Cookie Dough"></li>
             <label for="cookie-dough">Cookie Dough</label>
-          <li><input type="checkbox" id= "nutella" name="Nutella" value="Nutella"></li>
+          <li><input type="checkbox" id= "nutella" class="checkbox" name="Nutella" value="Nutella"></li>
             <label for="nutella">Nutella</label>
-          <li><input type="checkbox" id= "bubble-gum" name="Bubble Gum" value="Bubble Gum"></li>
+          <li><input type="checkbox" id= "bubble-gum" class="checkbox" name="Bubble Gum" value="Bubble Gum"></li>
             <label for="bubble-gum">Bubble Gum</label>
         </ul>
         <hr>
       </section>
-
+     </form>
       <button id= "submit" type="button" name="submit">Submit Cone</button>
-      
+
     <div class="card-box">
-      <div class="cone-card">
-        <h3 class="conedisplay">Cone Output</h3>
-      <p class="flavordisplay">Flavor Output</p>
-    </div>
+      <!-- <div class="cone-card">
+          <div class="card-top">
+            <h3 class="conedisplay">Cone Output</h3>
+            <p>Flavors</p>
+        </div>
+        <div class="card-bottom"></div>
+    </div> -->
   </div>
       <script src="scripts.js"></script>
     </body>
 </html>
+
+
+<!-- <p class="flavordisplay">Flavor Output -->
